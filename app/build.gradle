@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.esawar'
+    namespace 'com.thirdygraphics.esawar'
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.esawar"
+        applicationId "com.thirdygraphics.esawar"
         minSdk 21
         targetSdk 32
         versionCode 1

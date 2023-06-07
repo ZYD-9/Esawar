@@ -1,8 +1,10 @@
-package com.example.esawar;
+package com.thirdygraphics.esawar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.thirdygraphics.esawar.R;
 
 public class MainActivity extends AppCompatActivity {
 

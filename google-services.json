@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1049734125706",
+    "project_id": "esawar-c2c96",
+    "storage_bucket": "esawar-c2c96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049734125706:android:6f889e6b646c89098a7573",
+        "android_client_info": {
+          "package_name": "com.thirdygraphics.esawar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049734125706-5uft1a0jpfn2hi20jh56lu6dpeencpga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxXa_VKthV5MC7nw04iTTR7bPZYqkBMf0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1049734125706-5uft1a0jpfn2hi20jh56lu6dpeencpga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
