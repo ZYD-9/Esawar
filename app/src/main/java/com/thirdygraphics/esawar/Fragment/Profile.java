@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.joanzapata.iconify.Iconify;
 import com.thirdygraphics.esawar.R;
 
 public class Profile extends Fragment {
@@ -21,7 +22,6 @@ public class Profile extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         view = inflater.inflate(R.layout.activity_profile, container, false);
-
 
         return  view;
     }

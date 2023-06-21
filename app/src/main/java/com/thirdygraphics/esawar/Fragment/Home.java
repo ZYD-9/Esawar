@@ -76,7 +76,6 @@ public class Home extends Fragment implements MyInterface {
     private void placesSection() {
 
         //goto places
-
         ArrayList<String> images = new ArrayList<>();
         ArrayList<String> names = new ArrayList<>();
 
@@ -101,8 +100,6 @@ public class Home extends Fragment implements MyInterface {
         HomepagePlacesAdapter homepagePlacesAdapter = new HomepagePlacesAdapter(getActivity(), homepagePlacesModels, this);
         places_recycler.setAdapter(homepagePlacesAdapter);
         places_recycler.setLayoutManager(new GridLayoutManager(getActivity(),2, GridLayoutManager.VERTICAL, false));
-
-
     }
 
     private void reccomendedSection() {
