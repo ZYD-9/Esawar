@@ -4,22 +4,42 @@
 
     <item
         android:id="@+id/nav_home"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/baseline_home"
         app:iconTint="#C0CBF3"
         android:title="Home" />
 
     <item
         android:id="@+id/nav_feed"
-        android:icon="@drawable/ic_feed"
+        android:icon="@drawable/feed"
         app:iconTint="#C0CBF3"
         android:iconTint="#C0CBF3"
         android:title="Feed" />
 
+
     <item
-        android:id="@+id/nav_profile"
-        android:icon="@drawable/ic_profile"
+        android:id="@+id/nav_post"
+        android:icon="@drawable/post"
         app:iconTint="#C0CBF3"
         android:iconTint="#C0CBF3"
-        android:title="Profile" />
+        android:title="Post" />
+
+
+    <item
+        android:id="@+id/nav_hotel"
+        android:icon="@drawable/hotel"
+        app:iconTint="#C0CBF3"
+        android:iconTint="#C0CBF3"
+        android:title="Hotel" />
+
+    <item
+        android:id="@+id/nav_restaurant"
+        android:icon="@drawable/restaurant"
+        app:iconTint="#C0CBF3"
+        android:iconTint="#C0CBF3"
+        android:title="Restaurant" />
+
+
+
+
 
 </menu>

@@ -24,10 +24,10 @@
             android:name=".authentication.Welcome"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Loading"
             android:exported="false" />
         <activity
-            android:name=".Fragment.Profile"
+            android:name=".Fragment.Restaurant"
             android:exported="false" />
         <activity
             android:name=".Fragment.Feed"
@@ -42,7 +42,7 @@
             android:name=".authentication.SignUp"
             android:exported="false" />
         <activity
-            android:name=".Loading"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

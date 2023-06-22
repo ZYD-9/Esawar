@@ -9,8 +9,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.thirdygraphics.esawar.Fragment.Feed;
 import com.thirdygraphics.esawar.Fragment.Home;
-import com.thirdygraphics.esawar.Fragment.Profile;
-import com.thirdygraphics.esawar.R;
+import com.thirdygraphics.esawar.Fragment.Restaurant;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_feed:
                         selectedFragment = new Feed();
                         break;
-                    case R.id.nav_profile:
-                        selectedFragment = new Profile();
+                    case R.id.nav_restaurant:
+                        selectedFragment = new Restaurant();
                         break;
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
