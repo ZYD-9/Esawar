@@ -14,7 +14,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "1049734125706-5uft1a0jpfn2hi20jh56lu6dpeencpga.apps.googleusercontent.com",
+          "client_id": "1049734125706-lod76itsqbhe3g3fgmli35i1bs1l7f3g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thirdygraphics.esawar",
+            "certificate_hash": "5fb96a8c1e29e7e54e6c39fc4ed882e4947c61ce"
+          }
+        },
+        {
+          "client_id": "1049734125706-5jbu3apmstc25nve58nv3aeiagqt88es.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -27,7 +35,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1049734125706-5uft1a0jpfn2hi20jh56lu6dpeencpga.apps.googleusercontent.com",
+              "client_id": "1049734125706-5jbu3apmstc25nve58nv3aeiagqt88es.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
