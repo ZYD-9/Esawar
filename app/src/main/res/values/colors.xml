@@ -25,6 +25,7 @@
     <color name="text_secondary">#475467</color>
     <color name="background">#FFFFFF</color>
     <color name="edit_text">#EFF7FF</color>
+    <color name="edit_text2">#4E4760</color>
 
 
 </resources>
