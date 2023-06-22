@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_match"
+    android:background="@drawable/bg_official"
+    tools:context=".Loading"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/width_match"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/esawar_logo"
+            />
+
+        <TextView
+            style="@style/all_wrap"
+            android:textSize="30sp"
+            android:fontFamily="@font/montserratblack"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/all_match"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="bottom"
+        >
+
+<!--        Welcome TO-->
+        <TextView
+            style="@style/all_wrap"
+            android:textSize="25sp"
+            android:fontFamily="@font/montserratbold"
+            android:text="Welcome To"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            style="@style/all_wrap"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Ilocus Sur Traveler's App"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginButton"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:drawableTint="@color/primary"
+            android:fontFamily="@font/montserratmedium"
+            android:padding="20dp"
+            android:stateListAnimator="@null"
+            android:text="SIGN IN"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="12dp"
+            app:rippleColor="@color/primary"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signupButton"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserratsemibold"
+            android:padding="20dp"
+            android:stateListAnimator="@null"
+            android:text="CREATE AN ACCOUNT"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:backgroundTint="@android:color/transparent"
+            app:cornerRadius="12dp"
+            app:rippleColor="@color/white"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp" />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

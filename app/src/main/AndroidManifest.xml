@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Esawar"
         tools:targetApi="31">
         <activity
+            android:name=".authentication.Welcome"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".Fragment.Profile"
             android:exported="false" />
         <activity
@@ -28,7 +34,7 @@
             android:name=".authentication.SignUp"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Loading"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
