@@ -53,11 +53,15 @@ public class Home extends Fragment implements MyInterface {
         image.add(R.drawable.church);
         image.add(R.drawable.park);
         image.add(R.drawable.restaurant2);
+        image.add(R.drawable.restaurant2);
+        image.add(R.drawable.restaurant2);
 
         categoryName.add("Beach");
         categoryName.add("Museum");
         categoryName.add("Church");
         categoryName.add("Park");
+        categoryName.add("Restaurant");
+        categoryName.add("Restaurant");
         categoryName.add("Restaurant");
 
 
