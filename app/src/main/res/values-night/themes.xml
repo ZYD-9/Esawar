@@ -22,7 +22,9 @@
         <!-- Set default orientation -->
         <item name="android:orientation">vertical</item>
 
-
+        <!-- Set default hint color -->
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="android:drawableTint" tools:targetApi="m">@color/text_secondary</item>
 
 
     </style>
