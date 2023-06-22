@@ -66,6 +66,7 @@
                     />
 
                 <EditText
+                    android:id="@+id/edtEmail"
                     style="@style/edit_text"
                     android:hint="Enter Your Email"
                     android:drawableStart="@drawable/baseline_email_24"
@@ -89,6 +90,7 @@
                     />
 
                 <EditText
+                    android:id="@+id/editPassword"
                     style="@style/edit_text"
                     android:hint="Enter Your Password"
                     android:drawableStart="@drawable/baseline_lock_24"
@@ -99,6 +101,7 @@
 
 <!--        Forgot Password-->
             <TextView
+                android:id="@+id/btnForgotPassword"
                 android:layout_marginTop="20dp"
                 style="@style/all_wrap"
                 android:textSize="15sp"
@@ -111,6 +114,7 @@
 
 <!--            Sign in -->
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogin"
                 style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
                 android:padding="14dp"
                 android:layout_width="match_parent"
@@ -151,6 +155,7 @@
 
 <!--            Google-->
             <LinearLayout
+                android:id="@+id/btnGoogle"
                 android:layout_marginVertical="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -178,6 +183,7 @@
             </LinearLayout>
             <!--Facebook-->
             <LinearLayout
+                android:id="@+id/btnFacebook"
                 android:layout_marginVertical="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
