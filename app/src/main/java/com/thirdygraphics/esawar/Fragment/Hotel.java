@@ -45,24 +45,26 @@ public class Hotel extends Fragment implements MyInterface {
         ArrayList<String> name = new ArrayList<>();
         ArrayList<String> places = new ArrayList<>();
 
-        name.add("Bantay");
-        name.add("Vigan");
-        name.add("Golden Haven");
-        name.add("Sky Ranch");
-        name.add("Mount Mayon");
+        name.add("Hotel Veneto");
+        name.add("Home Hotel");
+        name.add("Paradores ");
+        name.add("Traversa Hotel");
+        name.add("Ciudad Fernandina");
 
         places.add("Vigan");
         places.add("Sigay");
         places.add("Bantay");
         places.add("Suyo");
         places.add("Taal");
+        places.add("Bantay");
 
 
-        image.add(R.drawable.tangkelagoon);
-        image.add(R.drawable.masasabeach);
-        image.add(R.drawable.goldenhaven);
-        image.add(R.drawable.skyranch);
-        image.add(R.drawable.mountmayon);
+        image.add(R.drawable.hotel1);
+        image.add(R.drawable.hotel2);
+        image.add(R.drawable.hotel3);
+        image.add(R.drawable.hotel4);
+        image.add(R.drawable.hotel5);
+        image.add(R.drawable.hotel6);
 
         for(int i=0; i<name.size();i++){
             hotelsModels.add(new RecommendedModel("1", image.get(i),name.get(i), places.get(i)));

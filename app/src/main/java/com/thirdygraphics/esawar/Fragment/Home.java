@@ -131,24 +131,28 @@ public class Home extends Fragment implements MyInterface {
         ArrayList<String> places = new ArrayList<>();
         ArrayList<Double> rate = new ArrayList<>();
 
-        name.add("Bantay");
-        name.add("Vigan");
-        name.add("Golden Haven");
-        name.add("Sky Ranch");
-        name.add("Mount Mayon");
+        name.add("Crisologo Museum");
+        name.add("Aw-asen Falls");
+        name.add("Bantay Bell Tower");
+        name.add("Sangbay ni Ragsak");
+        name.add("Dawara Falls");
+        name.add("Baluarte Resort");
 
         places.add("Vigan");
         places.add("Sigay");
         places.add("Bantay");
         places.add("Suyo");
         places.add("Taal");
+        places.add("Suyo");
 
 
-        image.add(R.drawable.tangkelagoon);
-        image.add(R.drawable.masasabeach);
-        image.add(R.drawable.goldenhaven);
-        image.add(R.drawable.skyranch);
-        image.add(R.drawable.mountmayon);
+        image.add(R.drawable.places1);
+        image.add(R.drawable.places2);
+        image.add(R.drawable.places3);
+        image.add(R.drawable.places4);
+        image.add(R.drawable.places5);
+        image.add(R.drawable.places6);
+
 
         for(int i=0; i<name.size();i++){
             recommendedModels.add(new RecommendedModel("1", image.get(i),name.get(i), places.get(i)));

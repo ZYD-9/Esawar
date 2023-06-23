@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Esawar"
         tools:targetApi="31">
         <activity
+            android:name=".Pages.Places.PlacesHomePage"
+            android:exported="false" />
+        <activity
             android:name=".Pages.CategoriesPage"
             android:exported="false" />
         <activity

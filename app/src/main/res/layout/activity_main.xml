@@ -73,7 +73,7 @@
 
                 <TextView
                     style="@style/all_wrap"
-                    android:text="Thirdy"
+                    android:text="username"
                     android:textColor="@color/white"
                     android:textSize="14sp"
                     android:layout_marginStart="10dp"

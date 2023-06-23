@@ -47,24 +47,30 @@ public class Restaurant extends Fragment implements MyInterface {
         ArrayList<String> name = new ArrayList<>();
         ArrayList<String> places = new ArrayList<>();
 
-        name.add("Bantay");
-        name.add("Vigan");
-        name.add("Golden Haven");
-        name.add("Sky Ranch");
-        name.add("Mount Mayon");
+        name.add("Cafe Leona");
+        name.add("Bar Tech");
+        name.add("Cafe Bigaa");
+        name.add("Kusina Felicitas");
+        name.add("1995 Studio Cafe");
+        name.add("Hidden Garden");
+
 
         places.add("Vigan");
         places.add("Sigay");
         places.add("Bantay");
         places.add("Suyo");
         places.add("Taal");
+        places.add("Vigan");
 
 
-        image.add(R.drawable.tangkelagoon);
-        image.add(R.drawable.masasabeach);
-        image.add(R.drawable.goldenhaven);
-        image.add(R.drawable.skyranch);
-        image.add(R.drawable.mountmayon);
+
+        image.add(R.drawable.restaurant1);
+        image.add(R.drawable.restaurant2);
+        image.add(R.drawable.restaurant3);
+        image.add(R.drawable.restaurant4);
+        image.add(R.drawable.restaurant5);
+        image.add(R.drawable.restaurant6);
+
 
         for(int i=0; i<name.size();i++){
             restaurantModels.add(new RecommendedModel("1", image.get(i),name.get(i), places.get(i)));

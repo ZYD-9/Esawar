@@ -67,8 +67,6 @@ public class MainActivity extends AppCompatActivity {
         sidebarMenu.setAdapter(sidebarAdapter);
 
 
-
-
         // Find the sidebar container and the button
         RelativeLayout sidebarContainer = findViewById(R.id.sidebar_container);
         LinearLayout btnViewSidebar = findViewById(R.id.btnViewSidebar);

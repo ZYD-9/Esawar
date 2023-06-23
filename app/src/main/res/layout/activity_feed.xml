@@ -1,22 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="none"
     tools:context=".Fragment.Feed">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="feed"
-        />
-
-    <Button
-        android:id="@+id/logout"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="logout"
-        />
+        android:orientation="vertical"
+        >
 
-</LinearLayout>
+
+        <LinearLayout
+            style="@style/width_match"
+            android:background="@color/primary"
+            android:padding="10dp"
+            >
+
+
+            <!--            Search Button-->
+            <LinearLayout
+                style="@style/width_match"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/container"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/menu"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/search"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"
+                    app:tint="@color/info" />
+
+
+                <EditText
+                    style="@style/width_match"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:paddingVertical="15dp"
+                    android:paddingHorizontal="10dp"
+                    android:hint="Search Post here"
+                    android:textColorHint="@color/info"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+     />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

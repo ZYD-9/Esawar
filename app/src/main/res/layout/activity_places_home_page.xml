@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pages.Places.PlacesHomePage">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/all_wrap"
+                android:text="Welcome to"
+                android:textColor="@color/background"
+                android:textSize="15sp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/montserratblack"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/place"
+                style="@style/all_wrap"
+                android:text="VIGAN"
+                android:textColor="@color/background"
+                android:textSize="15sp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/montserratblack"
+                android:layout_marginTop="10dp"
+                />
+
+
+        </LinearLayout>
+
+        <!--            Search Button-->
+
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="4dp"
+            >
+
+
+
+            <LinearLayout
+                style="@style/width_match"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/container"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/menu"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/search"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"
+                    app:tint="@color/info" />
+
+
+                <EditText
+                    style="@style/width_match"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:paddingVertical="15dp"
+                    android:paddingHorizontal="10dp"
+                    android:hint="Search places here"
+                    android:textColorHint="@color/info"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</RelativeLayout>
