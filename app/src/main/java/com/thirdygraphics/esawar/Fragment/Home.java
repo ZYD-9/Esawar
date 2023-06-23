@@ -18,6 +18,7 @@ import android.widget.LinearLayout;
 import com.thirdygraphics.esawar.Data.Place;
 import com.thirdygraphics.esawar.Pages.AllMunicipal;
 import com.thirdygraphics.esawar.Pages.CategoriesPage;
+import com.thirdygraphics.esawar.Pages.Places.PlacesHomePage;
 import com.thirdygraphics.esawar.R;
 import com.thirdygraphics.esawar.adapter.HomepageAdapter;
 import com.thirdygraphics.esawar.adapter.HomepagePlacesAdapter;
@@ -37,6 +38,15 @@ public class Home extends Fragment implements MyInterface {
     View view;
     RecyclerView categories_recycler,places_recycler,accelerate_recycler;
     Place place;
+
+
+    private LinearLayout btnAlilem;
+    private LinearLayout btnBanayoyo;
+    private LinearLayout btnBantay;
+    private LinearLayout btnBurgos;
+    private LinearLayout btnCabugao;
+
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -54,6 +64,21 @@ public class Home extends Fragment implements MyInterface {
     }
 
     private void minicipalSection() {
+
+
+
+        btnAlilem = view.findViewById(R.id.btnAlilem);
+        btnBanayoyo = view.findViewById(R.id.btnBanayoyo);
+        btnBantay = view.findViewById(R.id.btnBantay);
+        btnBurgos = view.findViewById(R.id.btnBurgos);
+        btnCabugao = view.findViewById(R.id.btnCabugao);
+
+        setButtonClickListener(btnAlilem, PlacesHomePage.class);
+        setButtonClickListener(btnBanayoyo, PlacesHomePage.class);
+        setButtonClickListener(btnBantay, PlacesHomePage.class);
+        setButtonClickListener(btnBurgos, PlacesHomePage.class);
+        setButtonClickListener(btnCabugao, PlacesHomePage.class);
+
         btnSeeAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,6 +87,17 @@ public class Home extends Fragment implements MyInterface {
             }
         });
     }
+
+    private void setButtonClickListener(LinearLayout button, final Class<?> destinationActivity) {
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), destinationActivity);
+                startActivity(intent);
+            }
+        });
+    }
+
 
     private void categoriesSection() {
         ArrayList<Integer> image = new ArrayList<>();

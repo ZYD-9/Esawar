@@ -130,6 +130,7 @@
                 >
 
                 <LinearLayout
+                    android:id="@+id/btnAlilem"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:orientation="horizontal"
@@ -184,6 +185,7 @@
                 >
 
                 <LinearLayout
+                    android:id="@+id/btnBanayoyo"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:orientation="horizontal"
@@ -247,35 +249,32 @@
                 >
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:orientation="horizontal"
-                    >
+                    android:id="@+id/btnBantay"
+                    android:layout_width="201dp"
+                    android:layout_height="54dp"
+                    android:orientation="horizontal">
 
                     <TextView
                         style="@style/all_wrap"
-                        android:text="Bantay"
                         android:layout_gravity="center_vertical"
-                        android:textSize="13sp"
                         android:layout_marginStart="10dp"
                         android:fontFamily="@font/montserratsemibold"
-                        />
+                        android:text="Bantay"
+                        android:textSize="13sp" />
 
                     <!--                Logo Container-->
                     <LinearLayout
                         style="@style/width_match"
                         android:layout_gravity="center_horizontal"
-                        android:gravity="end"
-                        >
+                        android:gravity="end">
 
                         <ImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:src="@drawable/municipal_bantay"
-                            android:scaleType="centerCrop"
                             android:layout_marginTop="5dp"
                             android:layout_marginRight="-20dp"
-                            />
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/municipal_bantay" />
 
 
                     </LinearLayout>
@@ -301,6 +300,7 @@
                 >
 
                 <LinearLayout
+                    android:id="@+id/btnBurgos"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:orientation="horizontal"
@@ -363,6 +363,7 @@
                 >
 
                 <LinearLayout
+                    android:id="@+id/btnCabugao"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:orientation="horizontal"

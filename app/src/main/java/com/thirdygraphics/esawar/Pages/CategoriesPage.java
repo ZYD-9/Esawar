@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 import com.thirdygraphics.esawar.Data.Place;
+import com.thirdygraphics.esawar.Pages.Places.PlacesHomePage;
 import com.thirdygraphics.esawar.R;
 import com.thirdygraphics.esawar.adapter.MyInterface;
 import com.thirdygraphics.esawar.adapter.ReccomendedAdapter;
@@ -77,6 +79,7 @@ public class CategoriesPage extends AppCompatActivity implements MyInterface {
 
     @Override
     public void onItemClick(int pos, String categories) {
-
+        Intent intent = new Intent(CategoriesPage.this, PlacesHomePage.class);
+        startActivity(intent);
     }
 }
