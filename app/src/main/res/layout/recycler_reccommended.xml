@@ -2,43 +2,49 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginEnd="5dp"
-    android:layout_marginStart="5dp"
-    android:layout_marginVertical="5dp"
     android:layout_height="wrap_content">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         >
 
         <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/background"
         android:layout_weight="1"
+        android:layout_marginVertical="7dp"
+        android:layout_marginHorizontal="7dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        android:outlineAmbientShadowColor="@color/shadow"
+            android:outlineSpotShadowColor="@color/shadow"
         >
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="7dp"
+            android:layout_gravity="center"
             >
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="20dp"
-               android:elevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="0dp"
                 app:cardElevation="0dp"
                 >
 
                 <RelativeLayout
                     android:id="@+id/image"
-                    android:layout_width="180dp"
+                    android:layout_width="match_parent"
                     android:layout_height="160dp"
-
-                    android:background="@drawable/park"
-                    ></RelativeLayout>
+                    android:background="@drawable/park"></RelativeLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -47,11 +53,34 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="5dp"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/montserratmedium"
-                android:text="Vigan"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Crisologo Museum"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/location"
+                    android:layout_marginHorizontal="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/municipal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vigan"
+                    android:fontFamily="@font/monserratregular"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
 
 
 
@@ -61,7 +90,6 @@
 
 
     </androidx.cardview.widget.CardView>
-
 
 
 

@@ -13,7 +13,9 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
+import com.thirdygraphics.esawar.Pages.AllMunicipal;
 import com.thirdygraphics.esawar.R;
 import com.thirdygraphics.esawar.adapter.HomepageAdapter;
 import com.thirdygraphics.esawar.adapter.HomepagePlacesAdapter;
@@ -29,7 +31,7 @@ public class Home extends Fragment implements MyInterface {
     ArrayList<HomepageModel> homepageModels = new ArrayList<>(); //for categorees
     ArrayList<HomepagePlacesModel> homepagePlacesModels = new ArrayList<>();
     ArrayList<RecommendedModel> recommendedModels = new ArrayList<>();
-
+    private LinearLayout btnSeeAll;
     View view;
     RecyclerView categories_recycler,places_recycler,accelerate_recycler;
     @Nullable
@@ -40,10 +42,22 @@ public class Home extends Fragment implements MyInterface {
 
         initXml();
         categoriesSection();
-        placesSection();
+        //placesSection();
         reccomendedSection();
+        minicipalSection();
         return  view;
     }
+
+    private void minicipalSection() {
+        btnSeeAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), AllMunicipal.class);
+                startActivity(intent);
+            }
+        });
+    }
+
     private void categoriesSection() {
         ArrayList<Integer> image = new ArrayList<>();
         ArrayList<String> categoryName = new ArrayList<>();
@@ -114,9 +128,15 @@ public class Home extends Fragment implements MyInterface {
 
         name.add("Bantay");
         name.add("Vigan");
-        name.add("Golden Haven Memorial Park");
+        name.add("Golden Haven");
         name.add("Sky Ranch");
         name.add("Mount Mayon");
+
+        places.add("Vigan");
+        places.add("Sigay");
+        places.add("Bantay");
+        places.add("Suyo");
+        places.add("Taal");
 
 
         image.add(R.drawable.tangkelagoon);
@@ -126,7 +146,7 @@ public class Home extends Fragment implements MyInterface {
         image.add(R.drawable.mountmayon);
 
         for(int i=0; i<name.size();i++){
-            recommendedModels.add(new RecommendedModel(image.get(i),name.get(i)));
+            recommendedModels.add(new RecommendedModel("1", image.get(i),name.get(i), places.get(i)));
         }
 
         ReccomendedAdapter reccomendedAdapter = new ReccomendedAdapter(getActivity(), recommendedModels, this);
@@ -141,7 +161,7 @@ public class Home extends Fragment implements MyInterface {
         categories_recycler = view.findViewById(R.id.rec_categories);
         places_recycler = view.findViewById(R.id.rec_places);
         accelerate_recycler = view.findViewById(R.id.accelerate);
-
+        btnSeeAll  = view.findViewById(R.id.btnSeeAll);
     }
 
     @Override

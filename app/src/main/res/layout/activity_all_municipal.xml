@@ -1,32 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scrollbars="none"
-    tools:context=".Fragment.Hotel">
+    android:orientation="vertical"
+    tools:context=".Pages.AllMunicipal">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
-
-
-    <LinearLayout
-        style="@style/width_match"
         android:background="@color/primary"
-        android:padding="10dp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
         >
 
+
+        <TextView
+            style="@style/all_wrap"
+            android:text="ILOCUS SUR MUNICIPAL"
+            android:textColor="@color/background"
+            android:textSize="15sp"
+            android:fontFamily="@font/montserratblack"
+            android:layout_marginTop="10dp"
+            />
 
         <!--            Search Button-->
         <LinearLayout
             style="@style/width_match"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-
             android:layout_marginVertical="10dp"
             android:background="@drawable/container"
             android:orientation="horizontal"
@@ -48,13 +51,17 @@
                 android:textSize="18sp"
                 android:paddingVertical="15dp"
                 android:paddingHorizontal="10dp"
-                android:hint="Search Hotels here"
+                android:hint="Search municipal  here"
                 android:textColorHint="@color/info"
                 android:background="@android:color/transparent"
                 android:layout_gravity="center_vertical"
                 />
 
         </LinearLayout>
+
+
+
+
 
     </LinearLayout>
 
@@ -65,5 +72,13 @@
         android:layout_margin="10dp"
         android:layout_marginTop="5dp"/>
 
-    </LinearLayout>
-</ScrollView>
+
+
+
+</LinearLayout>
+
+
+
+
+
+
