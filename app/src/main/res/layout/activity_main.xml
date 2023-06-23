@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/btnHide"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -53,6 +54,7 @@
             android:layout_marginBottom="10dp">
 
             <LinearLayout
+                android:id="@+id/btnViewSidebar"
                 style="@style/all_wrap"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
@@ -95,6 +97,9 @@
 
     </FrameLayout>
 
+
+
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
@@ -107,5 +112,18 @@
         app:labelVisibilityMode="labeled"
         app:itemIconTint="@drawable/bottom_navigation_selector"
         app:menu="@menu/bottom_navigation" />
+
+    <!-- Add the sidebar layout, initially hidden -->
+    <RelativeLayout
+        android:id="@+id/sidebar_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include layout="@layout/sidebar_layout" />
+
+    </RelativeLayout>
+
+
 
 </RelativeLayout>

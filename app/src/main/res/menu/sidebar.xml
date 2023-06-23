@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mypost"
+        android:title="My Post"
+        android:icon="@drawable/mypost"
+        />
+
+    <item
+        android:id="@+id/inbox"
+        android:title="Inbox"
+        android:icon="@drawable/inbox"
+        />
+
+    <item
+        android:id="@+id/myfavorites"
+        android:title="My Favorites"
+        android:icon="@drawable/myfavorite"
+        />
+
+    <item
+        android:id="@+id/budget"
+        android:title="Budget"
+        android:icon="@drawable/budget"
+        />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/logout"
+        />
+
+
+</menu>

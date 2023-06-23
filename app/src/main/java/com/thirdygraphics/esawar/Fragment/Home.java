@@ -15,7 +15,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import com.thirdygraphics.esawar.Data.Place;
 import com.thirdygraphics.esawar.Pages.AllMunicipal;
+import com.thirdygraphics.esawar.Pages.CategoriesPage;
 import com.thirdygraphics.esawar.R;
 import com.thirdygraphics.esawar.adapter.HomepageAdapter;
 import com.thirdygraphics.esawar.adapter.HomepagePlacesAdapter;
@@ -34,11 +36,14 @@ public class Home extends Fragment implements MyInterface {
     private LinearLayout btnSeeAll;
     View view;
     RecyclerView categories_recycler,places_recycler,accelerate_recycler;
+    Place place;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         view = inflater.inflate(R.layout.activity_home, container, false);
+
+        place = new Place();
 
         initXml();
         categoriesSection();
@@ -169,9 +174,9 @@ public class Home extends Fragment implements MyInterface {
         Intent intent;
         switch (homepage){
             case "categories":
-                Log.d("TAG", "CHOOSING CATEGORIES");
-                //intent = new Intent(getActivity(), CategoryFeed.class);
-                //startActivity(intent);
+                place.CATEGORIES = homepageModels.get(pos).getCategoryName();
+                intent = new Intent(getActivity(), CategoriesPage.class);
+                startActivity(intent);
                 break;
             case "places":
                 Log.d("TAG", "CHOOSING places");

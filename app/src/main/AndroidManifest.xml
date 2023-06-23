@@ -15,6 +15,21 @@
         android:theme="@style/Theme.Esawar"
         tools:targetApi="31">
         <activity
+            android:name=".Pages.CategoriesPage"
+            android:exported="false" />
+        <activity
+            android:name=".Pages.Budget.Budget"
+            android:exported="false" />
+        <activity
+            android:name=".Pages.Favorite.MyFavorites"
+            android:exported="false" />
+        <activity
+            android:name=".Pages.Inbox.Inbox"
+            android:exported="false" />
+        <activity
+            android:name=".Pages.Post.MyPost"
+            android:exported="false" />
+        <activity
             android:name=".Pages.AllMunicipal"
             android:exported="false" />
         <activity
