@@ -22,7 +22,7 @@
 
         <TextView
             style="@style/all_wrap"
-            android:text="Where do you want to go in Ilocus Sur?"
+            android:text="Where do you want to go in Ilocos Sur?"
             android:textColor="@color/background"
             android:textSize="14sp"
             android:layout_marginTop="10dp"
@@ -96,10 +96,10 @@
             android:layout_marginHorizontal="10dp"
             />
 
-<!--            Ilocus Sur Municipal-->
+<!--             Sur Municipal-->
         <TextView
                 style="@style/all_wrap"
-                android:text="Ilocus Sur Municipal"
+                android:text="Ilocos Sur Municipal"
                 android:textSize="14sp"
                 android:padding="10dp"
                 android:layout_marginStart="8dp"
